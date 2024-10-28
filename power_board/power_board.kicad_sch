@@ -1283,6 +1283,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.6109 86.99) (xy 186.6109 86.9558)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22d36b98-7321-4280-8e2e-e85dded06913")
+	)
+	(wire
+		(pts
 			(xy 147.32 41.91) (xy 147.32 48.26)
 		)
 		(stroke
@@ -1300,6 +1310,16 @@
 			(type default)
 		)
 		(uuid "67c288fe-3954-4f38-b3b8-c906e9d73f4c")
+	)
+	(wire
+		(pts
+			(xy 186.69 83.82) (xy 193.04 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "693f7685-b021-47b2-be22-70159bf3e0e8")
 	)
 	(wire
 		(pts
@@ -1333,6 +1353,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 86.9558) (xy 193.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b18e3d54-d024-4566-a90f-bc99d3dc2fdc")
+	)
+	(wire
+		(pts
 			(xy 142.24 104.14) (xy 144.78 104.14)
 		)
 		(stroke
@@ -1340,6 +1370,16 @@
 			(type default)
 		)
 		(uuid "b455f48b-d405-4600-8663-a127b7c2c496")
+	)
+	(wire
+		(pts
+			(xy 186.6109 86.9558) (xy 193.04 86.9558)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4c10875-a6ac-4402-b633-0f455eb4a26b")
 	)
 	(wire
 		(pts
@@ -1640,6 +1680,72 @@
 			(project ""
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "URC:GND")
+		(at 193.04 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f24d4c7-a6d0-49fd-a142-d2a2e9871108")
+		(property "Reference" "#PWR07"
+			(at 193.04 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 193.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2719a22f-8dfd-4b7f-8670-e74129834866")
+		)
+		(instances
+			(project ""
+				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2126,6 +2232,73 @@
 			(project ""
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "URC:+5V")
+		(at 193.04 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5e48cad-36a8-4ba2-9b5b-1d0812d14faa")
+		(property "Reference" "#PWR06"
+			(at 189.23 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 196.85 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3db0f56d-b438-4f47-a52f-ba7852260d3b")
+		)
+		(instances
+			(project ""
+				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
