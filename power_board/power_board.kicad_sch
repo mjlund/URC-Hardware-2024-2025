@@ -1142,6 +1142,176 @@
 				)
 			)
 		)
+		(symbol "URC:Resistor"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Resistor"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Resistor_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Resistor_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "URC:Test_Point"
 			(pin_numbers hide)
 			(pin_names
@@ -1251,6 +1421,22 @@
 		(color 0 0 0 0)
 		(uuid "59f49eb2-ce7e-4978-9e3d-26c6f38d167b")
 	)
+	(junction
+		(at 167.64 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3affb71-93f3-4b86-861d-be352f4f2483")
+	)
+	(wire
+		(pts
+			(xy 154.94 73.66) (xy 167.64 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07ff3590-016c-42ca-bbaa-f3368f68fe29")
+	)
 	(wire
 		(pts
 			(xy 142.24 104.14) (xy 142.24 107.95)
@@ -1290,6 +1476,16 @@
 			(type default)
 		)
 		(uuid "22d36b98-7321-4280-8e2e-e85dded06913")
+	)
+	(wire
+		(pts
+			(xy 167.64 66.04) (xy 167.64 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27458da2-7628-47ef-93c5-35bc1ea9b977")
 	)
 	(wire
 		(pts
@@ -1412,6 +1608,72 @@
 		(uuid "f4cdbec5-4a78-4ddf-a199-0d5e48006539")
 	)
 	(symbol
+		(lib_id "URC:GND")
+		(at 167.64 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25783c62-c914-4763-a632-df86e2368592")
+		(property "Reference" "#PWR08"
+			(at 167.64 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7d4cba7-dcea-4813-8af6-69769caa7896")
+		)
+		(instances
+			(project "power_board"
+				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "URC:Test_Point")
 		(at 58.42 172.72 180)
 		(unit 1)
@@ -1470,9 +1732,78 @@
 			(uuid "245c2a4c-6b32-4270-b32a-d3c87f11173a")
 		)
 		(instances
-			(project ""
+			(project "power_board"
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "URC:Resistor")
+		(at 167.64 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cb937b6-e9ef-4bf5-970d-4d56a314d6e1")
+		(property "Reference" "R1"
+			(at 170.18 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Resistor"
+			(at 170.18 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.656 62.484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 167.64 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ce9b58b1-6629-41e3-89e7-f83028c51d50")
+		)
+		(pin "1"
+			(uuid "75c4522d-b663-4153-b58e-21952a1dfd8b")
+		)
+		(instances
+			(project "power_board"
+				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1677,7 +2008,7 @@
 			(uuid "2506b5d7-f2c2-461a-b2d4-dac4f04d6449")
 		)
 		(instances
-			(project ""
+			(project "power_board"
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "TP3")
 					(unit 1)
@@ -1743,9 +2074,79 @@
 			(uuid "2719a22f-8dfd-4b7f-8670-e74129834866")
 		)
 		(instances
-			(project ""
+			(project "power_board"
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "URC:Resistor")
+		(at 167.64 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "987732b5-4258-422a-b07d-416738c9cd08")
+		(property "Reference" "R2"
+			(at 170.18 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Resistor"
+			(at 170.18 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.656 77.724 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 167.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3041121d-379e-4206-bb7c-bb172bc5a07b")
+		)
+		(pin "1"
+			(uuid "9e489ffc-ecc3-4c18-8e29-cf60f8967066")
+		)
+		(instances
+			(project "power_board"
+				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -1964,7 +2365,7 @@
 			(uuid "0ff0f7fc-6955-4e00-809a-c5d232575923")
 		)
 		(instances
-			(project ""
+			(project "power_board"
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "#PWR04")
 					(unit 1)
@@ -2034,6 +2435,72 @@
 			(project "power_board"
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "URC:+12V")
+		(at 167.64 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee2857bf-fe7e-43f8-a865-ce5856d0e302")
+		(property "Reference" "#PWR09"
+			(at 167.64 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 167.64 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 167.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "905fe40e-7543-4d52-a971-2f45351e2c34")
+		)
+		(instances
+			(project "power_board"
+				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2229,7 +2696,7 @@
 			(uuid "cf9c4eda-d6fb-4d14-bc58-e6cb07d731f4")
 		)
 		(instances
-			(project ""
+			(project "power_board"
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "#PWR05")
 					(unit 1)
@@ -2296,7 +2763,7 @@
 			(uuid "3db0f56d-b438-4f47-a52f-ba7852260d3b")
 		)
 		(instances
-			(project ""
+			(project "power_board"
 				(path "/8fb9e798-2690-4afb-a1e7-64efc74d0eca"
 					(reference "#PWR06")
 					(unit 1)
