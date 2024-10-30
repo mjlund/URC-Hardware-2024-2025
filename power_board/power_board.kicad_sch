@@ -2063,16 +2063,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 41.91) (xy 147.32 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34fe883b-43cf-4b45-b17d-08a0bfee47f8")
-	)
-	(wire
-		(pts
 			(xy 184.15 43.18) (xy 184.15 38.1)
 		)
 		(stroke
@@ -2160,6 +2150,16 @@
 			(type default)
 		)
 		(uuid "b4d17299-8e71-4945-a159-46b78d274ae1")
+	)
+	(wire
+		(pts
+			(xy 139.7 40.64) (xy 139.7 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d12ed58a-c133-4c38-a083-feb8c629b73b")
 	)
 	(wire
 		(pts
@@ -3585,7 +3585,7 @@
 	)
 	(symbol
 		(lib_id "URC:+5V")
-		(at 147.32 41.91 0)
+		(at 139.7 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3594,7 +3594,7 @@
 		(fields_autoplaced yes)
 		(uuid "eea4ad3a-cf3b-4c23-bfa2-a895fff580a4")
 		(property "Reference" "#PWR02"
-			(at 147.32 45.72 0)
+			(at 139.7 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3603,7 +3603,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 147.32 36.83 0)
+			(at 139.7 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3611,7 +3611,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 41.91 0)
+			(at 139.7 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3620,7 +3620,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 41.91 0)
+			(at 139.7 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3629,7 +3629,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 41.91 0)
+			(at 139.7 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
